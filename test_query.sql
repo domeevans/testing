@@ -5,7 +5,7 @@ select
     sum(gmv_amount) as gmv_amount,
     sum(gmv_item_quantity) as gmv_item_quantity
 from
-    sales_detail_migration_version
+    prod_datalake_gold_sales.sales_detail_migration_version
 where
     economical_businessunit_country_code = 'ES'
     and retrocession_type != 'Physical'
